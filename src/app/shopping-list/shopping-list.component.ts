@@ -11,6 +11,12 @@ export class ShoppingListComponent implements OnInit {
     new Ingredient("Rice", 200),
     new Ingredient("Green chilli", 15)
   ];
+
+  onaddingList(list: Ingredient) {
+    if (list.name && list.amount) {
+      this.ingredients.push(list);
+    } else alert("please add something")
+  }
   constructor() { }
 
   ngOnInit() {

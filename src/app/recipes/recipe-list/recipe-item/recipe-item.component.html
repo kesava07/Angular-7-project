@@ -1,1 +1,13 @@
-<p>recipe-item works!</p>
+<ul class="list-group" (click)="onSelect()">
+    <li class="list-group-item">
+        <div class="row">
+            <div class="col-lg-9">
+                <h4>{{recipe.name}}</h4>
+                <p>{{recipe.description}}</p>
+            </div>
+            <div class="col-lg-3">
+                <img [src]="recipe.imagePath" class="rounded-circle" height="60" width="60" />
+            </div>
+        </div>
+    </li>
+</ul>

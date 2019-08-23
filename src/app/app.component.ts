@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'course-project';
+
+  selectedLink = 'recipe';
+  onSelectLink(link: string) {
+    this.selectedLink = link;
+  }
+
 }
