@@ -1,13 +1,15 @@
-<ul class="list-group" (click)="onSelect()">
-    <li class="list-group-item">
-        <div class="row">
-            <div class="col-lg-9">
-                <h4>{{recipe.name}}</h4>
-                <p>{{recipe.description}}</p>
+<ul class="list-group curs-pointer">
+    <a [routerLink]="[index]" routerLinkActive="active">
+        <li class="list-group-item my-2 shadow">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h4>{{recipe.name}}</h4>
+                    <p>{{recipe.description}}</p>
+                </div>
+                <div class="col-lg-3">
+                    <img [src]="recipe.imagePath" class="rounded-circle" height="60" width="60" />
+                </div>
             </div>
-            <div class="col-lg-3">
-                <img [src]="recipe.imagePath" class="rounded-circle" height="60" width="60" />
-            </div>
-        </div>
-    </li>
+        </li>
+    </a>
 </ul>

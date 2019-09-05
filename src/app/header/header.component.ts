@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component } from '@angular/core';
 
 
 @Component({
@@ -9,9 +9,4 @@ import { Component, Output, EventEmitter } from '@angular/core';
 
 export class headerComponent {
 
-    @Output() linkSelected = new EventEmitter<string>();
-
-    onSelect(link: string) {
-        this.linkSelected.emit(link)
-    }
 }

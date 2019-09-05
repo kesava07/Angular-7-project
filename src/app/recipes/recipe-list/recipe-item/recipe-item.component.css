@@ -1,0 +1,9 @@
+.list-group a{
+    color: black;
+}
+.list-group a:hover{
+    text-decoration: none;
+}
+.list-group .active .list-group-item{
+    background-color: lightgray
+}
